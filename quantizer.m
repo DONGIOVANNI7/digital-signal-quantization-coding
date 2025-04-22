@@ -1,12 +1,13 @@
 %           -- quantizer --
 function [d,y,e] = quantizer(x,L)
-    d = (max(x) - min(x))/L;             % find d
     if mod(L,2) == 0.0
+        d = (max(x) - min(x))/L;             % find d for Mid-Rise
         n_min = ((-L+1)/2);              % set n_min
         n_max = ((L-1)/2);                   % set n_max
         n = n_min:n_max;                 % find all n
         g = n*d;                        % find yn (named g here)
     else
+        d = (max(x) - min(x))/(L-1);             % find d for Mid-Tread
         n_min = -(L-1)/2;
         n_max = ((L-1)/2);
         n = n_min:n_max;
