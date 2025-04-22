@@ -1,5 +1,5 @@
 # digital-signal-quantization-coding
-This repository contains MATLAB functions and scripts for quantizing and encoding a sampled signal, as part of a communication systems laboratory exercise. The project demonstrates mid-rise/mid-tread quantization, natural binary encoding, and visualization of results for different quantization levels.
+This repository contains MATLAB functions and scripts for quantizing and encoding a sampled signal. This small project demonstrates mid-rise/mid-tread quantization, natural binary encoding, and visualization of results for different quantization levels.
 
 ## Files Overview
 
